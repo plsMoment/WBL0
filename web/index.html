@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color:#FFFF
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>OrderManager</title>
+</head>
+<body>
+    <p>
+        <input type="text" id="orderID-input" placeholder="Input orderID" size="28"/>
+        <button onclick="route()">Найти</button>
+    </p>
+    <script type="text/javascript">
+        function route() {
+            const id = document.getElementById("orderID-input").value;
+            //const host = process.env.server_host_address;
+            location.replace(`http://127.0.0.1:8080/order/${id}`);
+        }
+    </script>
+</body>
+</html>

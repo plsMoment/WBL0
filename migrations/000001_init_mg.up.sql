@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "orders" (
+    "id" VARCHAR PRIMARY KEY,
+    "data" JSONB NOT NULL
+);
